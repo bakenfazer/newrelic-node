@@ -6,7 +6,7 @@
     "nodemon": "^2.0.20"
   },
   "scripts": {
-    "start": "nodemon -r newrelic server.js"
+    "start": "nodemon -r newrelic server.js & cd front-end && PORT=3000 npm start"
   },
   "name": "ls",
   "version": "1.0.0",
