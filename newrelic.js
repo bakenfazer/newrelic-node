@@ -1,4 +1,5 @@
 'use strict';
+require('dotenv').configure()
 /**
 * New Relic agent configuration.
 *
@@ -13,7 +14,7 @@ exports.config = {
   /**
   * Your New Relic license key.
   */
-  license_key: '08527505dbe013cd87890e385037e6e4FFFFNRAL',
+  license_key: process.env.NEW_RELIC,
   logging: {
     /**
     * Level at which to log. 'trace' is most useful to New Relic when diagnosing
