@@ -1,5 +1,5 @@
 'use strict';
-require('dotenv').config()
+require('dotenv').config('./.env-client')
 const appName = process.env.NEW_RELIC_APP_NAME
 const apiKey = process.env.NEW_RELIC_API_KEY
 /**
