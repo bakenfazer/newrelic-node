@@ -2,6 +2,12 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const success = () => {
+    fetch('http://example.com/movies.json')
+    .then((response) => response.json())
+    .then((data) => console.log(data));
+    }
+    
   return (
     <div className="App">
       <header className="App-header">
@@ -17,6 +23,10 @@ function App() {
         >
           Learn React
         </a>
+        <p>Here's a success button</p>
+        <button onClick={{success}}>Success</button>
+        <p>Here's a 400 button</p>
+        <button onClick={alert('yo')}>Success</button>
       </header>
     </div>
   );
